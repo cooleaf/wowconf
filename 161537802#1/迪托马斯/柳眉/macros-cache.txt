@@ -1,0 +1,54 @@
+VER 3 0100000000000014 "保护" "INV_Misc_QuestionMark"
+#showtooltip
+/stopmacro [dead][noexists]
+/stopcasting
+/cast 保护祝福
+END
+VER 3 010000000000000F "列王" "INV_Misc_QuestionMark"
+#showtooltip
+/cast 远古列王守卫
+END
+VER 3 0100000000000013 "制裁" "INV_Misc_QuestionMark"
+#showtooltip
+/cast 制裁之锤
+END
+VER 3 0100000000000009 "十字" "INV_Misc_QuestionMark"
+#showtooltip
+/cast 十字军打击
+END
+VER 3 0100000000000001 "圣令" "INV_Misc_QuestionMark"
+#showtooltip
+/cast 荣耀圣令
+END
+VER 3 010000000000000D "圣佑" "INV_Misc_QuestionMark"
+#showtooltip
+/cast 圣佑术
+END
+VER 3 0100000000000002 "圣审" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [harm]审判;[@targettarget]审判
+END
+VER 3 0100000000000010 "圣疗" "INV_Misc_QuestionMark"
+#showtooltip
+/cast 圣疗术
+END
+VER 3 010000000000000E "圣盾" "INV_Misc_QuestionMark"
+#showtooltip
+/stopcasting
+/cancelaura 圣盾术
+/cast 圣盾术
+END
+VER 3 0100000000000003 "奉献" "INV_Misc_QuestionMark"
+#showtooltip
+/cast 奉献
+END
+VER 3 0100000000000007 "舞" "INV_MISC_QUESTIONMARK"
+#showtootip [stance:1]正义圣印;[stance:2]真理圣印 
+/castsequence [stance:1]正义圣印 
+/castsequence [stance:2]真理圣印
+END
+VER 3 0100000000000015 "锤" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/targetenemy [target=target,help][target=target,noexists][target=target,dead]
+/cast 正义之锤
+END

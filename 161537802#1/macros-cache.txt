@@ -1,0 +1,55 @@
+VER 3 000000000000000F "BF_Mount" "ability_mount_charger"
+/bfmount
+END
+VER 3 0000000000000011 "BF_Pet" "achievement_worldevent_brewmaster"
+/BFPET
+END
+VER 3 0000000000000014 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] 清毒术;  [@mouseover,exists,mod:ctrl] 清毒术; [@mouseover,exists,mod:shift] 清毒术
+END
+VER 3 000000000000000A "圣闪" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [mod:ctrl,help]圣光闪现;[@player]圣光闪现
+END
+VER 3 000000000000000C "护盾" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [mod:ctrl]圣洁护盾;[target=player]圣洁护盾
+/in 27 /e ====== 圣洁护盾即将消失
+END
+VER 3 0000000000000003 "拯救" "INV_Misc_QuestionMark"
+#showtooltip 拯救祝福
+/stopmacro [dead][noexists]
+/stopcasting
+/cast [help]拯救祝福
+/cast [harm,@targettareget]拯救祝福;拯救祝福
+END
+VER 3 0000000000000006 "棱镜" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [mod:alt,@player]神圣棱镜;神圣棱镜
+END
+VER 3 0000000000000005 "清算" "INV_Misc_QuestionMark"
+#showtooltip
+/stopmacro [dead][noexists][help]
+/stopcasting
+/charge
+#/e 对着%t就是一个耳光 
+/cast 清算之手
+END
+VER 3 0000000000000012 "火鸡" "ACHIEVEMENT_GUILDPERK_MRPOPULARITY_RANK2"
+/tar 文文
+/script SetRaidTarget("target", 1)
+END
+VER 3 0000000000000008 "牺牲" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/cast [help]牺牲祝福;[harm,@targettareget]牺牲祝福;牺牲祝福
+END
+VER 3 0000000000000007 "盾击" "INV_Misc_QuestionMark"
+#showtooltip
+/cast 正义盾击
+END
+VER 3 0000000000000004 "自由" "INV_Misc_QuestionMark"
+#showtooltip
+/cast 自由祝福
+END
